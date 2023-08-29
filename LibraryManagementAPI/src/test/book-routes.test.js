@@ -1,9 +1,8 @@
 require('./setup');
 const path = require('path');
 const supertest = require('supertest');
-const app = require('../app'); // Adjust the path as needed
+const app = require('../app');
 
-// Specify the path to the custom .env file
 const envPath = path.join(__dirname, '.env.test');
 require('dotenv').config({ path: envPath });
 
